@@ -34,7 +34,7 @@ public class Application {
 				.orderBy(df.col("last_name").asc());
 		
 		// Write to destination
-		String dbConnectionUrl = "jdbc:postgresql://localhost/course_data"; // <<- You need to create this database
+		/*String dbConnectionUrl = "jdbc:postgresql://localhost/course_data"; // <<- You need to create this database
 		Properties prop = new Properties();
 	    prop.setProperty("driver", "org.postgresql.Driver");
 	    prop.setProperty("user", "postgres");
@@ -42,6 +42,6 @@ public class Application {
 	    
 	    df.write()
 	    	.mode(SaveMode.Overwrite)
-	    	.jdbc(dbConnectionUrl, "project1", prop);
+	    	.jdbc(dbConnectionUrl, "project1", prop);*/
 	}
 }
